@@ -16,7 +16,7 @@ module.exports = {
     './js/app.js'
   ],
   resolve: {
-    root: path.resolve( './app/' )
+    root: path.resolve( './app/js' )
   },
   module: {
     loaders: [
