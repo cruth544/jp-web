@@ -1,7 +1,8 @@
 import React from 'react'
 //import axios from 'axios'
 
-import NavBar from '../NavBar/NavBar'
+import NavBar from 'containers/NavBar/NavBar'
+require( './Home.scss' )
 
 const URL = ''
 
@@ -15,10 +16,13 @@ export default class Home extends React.Component {
 	}
 
 	render() {
+		const { store } = this.context
 		return (<div>
 				<NavBar></NavBar>
-				<h1 class="home-header">Home!</h1>
+				<h1 class="home-header">{ store.lastClicked }!</h1>
 		</div>)
 	}
 }
-
+Home.contextTypes = {
+	store: React.PropTypes.object
+}

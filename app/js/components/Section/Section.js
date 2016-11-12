@@ -12,3 +12,25 @@ export default class Section extends React.Component {
 	}
 }
 
+
+const NavBarLink = ( {
+	text,
+	onClickHandler
+}) => {
+	return (<div class="nav-bar-link"
+							onClick={ onClickHandler }>
+		<div class="nav-bar-link-text">
+			{ text }
+		</div>
+	</div>)
+}
+
+export default ({
+	classes,
+	buttonText,
+	onClickHandler
+}) => {
+	return (<div class="">
+
+	</div>)
+}
